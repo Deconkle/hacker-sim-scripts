@@ -2,10 +2,6 @@ from PIL import ImageGrab, Image, PngImagePlugin, ImageFilter
 from time import sleep
 import pytesseract # OCR, get TEXT(str) from PIL.ImageGrab obj.
 import interests # import our additional script. Contains a dict of account_type: [interests], as well as functions to read and count interests, then print
-
-# pip install pillow | install PIL
-# pip install pytesseract | install pytesseract, instilation may differ. If it doesn't work ensure pytesseract scripts are in path.
-
 clipboard = None  # global clipboard var. This simply saves what's on our clipboard (ONLY if it's of type PngImageFile!)
 
 def image_handler(image):
