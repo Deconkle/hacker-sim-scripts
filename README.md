@@ -6,10 +6,10 @@ These are scripts I've made for the game "Hacker Simulator", sold on [Steam](htt
 
 These scripts are not ran ingame, these are external scripts that aid in, or automate gameplay. I will assume readers are already familiar with game mechanics, if you are not you may find [this steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2645422003) helpful.
 
-# hackersim_auto_phish.py + interests.py
+# hackersim_auto_phish.py
 #### What does this do?
 
-These two scripts work together to read phishing target interests from their _fishbook_ profile, then parse them and return which type of account you need to purchase and use in order for your phishing attack to work. 
+This script reads phishing target interests from their _fishbook_ profile, then parses them and returns which type of account you need to purchase and use in order for your phishing attack to work. 
 The game designers wanted you to do this by eye, counting your targets interests, deciding the category of each interest in your head, then choosing the correct account type. *I have goldfish memory, I won't be doing that.* These scripts do the work for me.
 
 #### How does it work?
@@ -23,9 +23,9 @@ After starting the script, once you're ingame you'll be able to take a screensho
 
 Install [Python 3.x](https://www.python.org/downloads/) if you don't have it already.
 
-Download python files from this repository
+Download the python script from this repository.
 
-Install Google's [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract#installing-tesseract) and [add it to PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14))
+Install Google's [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract#installing-tesseract) and [add it to PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)).
 
 Using [Pythons Package Installer (PIP)](https://pip.pypa.io/en/stable/getting-started/), install Pillow (aka PIL) and pytesseract
 
