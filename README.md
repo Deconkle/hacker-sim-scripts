@@ -2,18 +2,18 @@
 
 #### What are these?
 
-These are scripts I've made for the game "Hacker Simulator", sold on [Steam](https://store.steampowered.com/app/1754840/Hacker_Simulator/) and developed by Save All Studio.
+These are scripts I've made for the game "Hacker Simulator", sold on [Steam](https://store.steampowered.com/app/1754840/Hacker_Simulator/) and developed by Save All Studios.
 
 These scripts are not ran ingame, these are external scripts that aid in, or automate gameplay. I will assume readers are already familiar with game mechanics, if you are not you may find [this steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2645422003) helpful.
 
 # hackersim_auto_phish.py + interests.py
-#### What are these?
+#### What does this do?
 
 These two scripts work together to read phishing target interests from their _fishbook_ profile, then parse them and return which type of account you need to purchase and use in order for your phishing attack to work. 
 The game designers wanted you to do this by eye, counting your targets interests, deciding the category of each interest in your head, then choosing the correct account type. *I have goldfish memory, I won't be doing that.* These scripts do the work for me.
 
 #### How does it work?
-The easiest method I could come up with to parse target interests with python is to take a windows screenshot ( WIN + SHIFT + S ) and draw the box around their interests. Python grabs the image from your clipboard automatically, it sharpens the image so Google's **Tesseract** OCR module can reliably convert the text in image to a string. Finally, we parse those strings and compare them against a master list of all possible interests.
+The easiest method I could come up with to parse target interests using python is to take a windows screenshot ( WIN + SHIFT + S ) and draw the box around their interests. Python grabs the image from your clipboard automatically, it sharpens the image so Google's **Tesseract** OCR module can reliably convert the text in image to a string. Finally, we parse those strings and compare them against a master list of all possible interests.
 
 #### Examples
 After starting the script, once you're ingame you'll be able to take a screenshot of ***just*** the targets interest (as shown in red below), and within 4 seconds the python script will print the account type you need to use for a successful phish. 
