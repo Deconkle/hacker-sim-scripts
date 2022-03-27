@@ -19,6 +19,11 @@ The easiest method I could come up with to parse target interests using python i
 After starting the script, once you're ingame you'll be able to take a screenshot of ***just*** the targets interest (as shown in red below), and within 4 seconds the python script will print the account type you need to use for a successful phish. 
 ![20220324083101_1_fishbook_crop](https://user-images.githubusercontent.com/24526230/160257747-3cf6f54c-554e-4de1-8e99-daaced3c19c8.jpg)
 
+After screenshotting the above selection, back in our command prompt window we can expect to see something like this.
+
+![image](https://user-images.githubusercontent.com/24526230/160290217-7341cbe1-2938-4ed2-b480-e1049ad55b0d.png)
+
+You can leave the script running and screenshot more  _fishbook_ user interests, and it'll keep on outputting the account types you need to use. 
 ## Installation
 
 Install [Python 3.x](https://www.python.org/downloads/) if you don't have it already.
