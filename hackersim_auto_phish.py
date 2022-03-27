@@ -14,7 +14,7 @@ interests = {
 # ex interest_list = ['Marketing','Documentary','Engineering','Aviation','Literature','Business','Manga','Online','Construction','Plays']
 def get_working_account_type(interest_list):
     interest_count = {} # by the end this will look something like {"Family and Realtionships": 0, "Shopping and Fashion": 6, "Food and Drink": 4, "Business": 0, "Entertainment": 0}
-    for interest_type in interests: # ['Family and Relationshiops', 'Shopping and Fashion', ETC]
+    for interest_type in interests: # ['Family and Relationships', 'Shopping and Fashion', ETC]
         interest_count[interest_type] = 0 # init with a zero
         for interest in interests[interest_type]: # loop through the values (['Dating', 'Family', 'Fatherhood', ETC])
             if interest in interest_list:
@@ -33,12 +33,9 @@ def image_handler(image): # We run OCR here.
     get_working_account_type(out)
 
 def images_are_same(im1, im2): # we can't just ask if two Image types are the same:
-    if not type(im1) == type(im2):
-        return False
-    else:
-        if type(im1) == PngImagePlugin.PngImageFile and type(im2) == PngImagePlugin.PngImageFile:
-            if list(im1.getdata()) == list(im2.getdata()): # we have to check if their data is the same.
-                return True
+    if type(im1) == PngImagePlugin.PngImageFile and type(im2) == type(im1):
+        if list(im1.getdata()) == list(im2.getdata()): # we have to check if their data is the same.
+            return True
     return False
 
 while True: 
